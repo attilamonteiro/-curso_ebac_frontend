@@ -4,39 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de Tarefas</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    #taskContainer {
-      text-align: center;
-    }
-
-    #taskForm {
-      margin-bottom: 20px;
-    }
-
-    #taskList {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    #taskList li {
-      cursor: pointer;
-      margin-bottom: 5px;
-      font-size: 18px;
-    }
-
-    .completed {
-      text-decoration: line-through;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -53,23 +21,6 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      // Função para adicionar tarefa à lista
-      $("#addTaskForm").submit(function(event) {
-        event.preventDefault();
-        var taskName = $("#taskName").val();
-        if (taskName.trim() !== "") {
-          $("#taskList").append("<li>" + taskName + "</li>");
-          $("#taskName").val(""); // Limpa o campo após adicionar a tarefa
-        }
-      });
-
-      // Função para aplicar estilo quando um item da lista é clicado
-      $("#taskList").on("click", "li", function() {
-        $(this).toggleClass("completed");
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
