@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body > header{
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+    width: 0 auto;
+}
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports article a {
+    background-color: #009432;
+}
+
+#economy {
+    background-color: #f8f59f;
+}
+
+#economy article a {
+    background-color: #ff9f1a;
+}
+
+#entertainment {
+    background-color: #ffcc00; /* Amarelo */
+}
+
+#entertainment article a {
+    background-color: #ffea00; /* Amarelo mais claro */
+}
+
+#technology {
+    background-color: #3498db; /* Azul */
+}
+
+#technology article a {
+    background-color: #5dade2; /* Azul mais claro */
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article {
+    width: calc(30% - 20px); /* Use calc para levar em conta a margem adicionada */
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.articles article img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
