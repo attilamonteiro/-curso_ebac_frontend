@@ -17,21 +17,21 @@
 .produto {}
 
 /* Elementos */
-.produto .produto-imagem {
+.produto__imagem {
     width: 100%;
 }
 
-.produto .produto-nome {
+.produto__nome {
     font-size: 1.2em;
     margin: 8px 0;
 }
 
-.produto .produto-descricao {
+.produto__descricao {
     color: gray;
 }
 
 /* Modificador */
-.produto.em-destaque {
+.produto--em-destaque {
     border: 2px solid gold;
     padding: 8px;
     background-color: #ffff42;
