@@ -1,0 +1,50 @@
+// Exemplo de variáveis
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+// Exemplo de mixin
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Exemplo de estilo para o corpo
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+// Exemplo de classe usando a variável
+.header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 10px;
+}
+
+// Exemplo de classe usando um mixin
+.container {
+  @include flex-center;
+  height: 100vh;
+}
+
+// Exemplo de aninhamento
+.content {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+
+  p {
+    line-height: 1.6;
+    color: $secondary-color;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
