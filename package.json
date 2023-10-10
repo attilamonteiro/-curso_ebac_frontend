@@ -1,0 +1,19 @@
+{
+  "name": "-curso_ebac_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run less\" \"http-server -c-1\" ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "less": "less-watch-compiler ./less ./css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "http-server": "^14.1.1",
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3"
+  }
+}

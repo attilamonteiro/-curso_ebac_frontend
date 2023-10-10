@@ -1,0 +1,36 @@
+@import 'maps.less';
+
+.nav {
+    background-color: #colors[primary-color];
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 16px 0;
+
+    ul {
+        list-style: none;
+        display: flex;
+
+        li {
+            a {
+                img {
+                    content: attr(data-icon);
+                    margin-right: 10px;
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.4);
+                    }
+                }
+            }
+        }
+    }
+}

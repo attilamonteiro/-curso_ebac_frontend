@@ -1,0 +1,33 @@
+@import 'maps.less';
+
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+
+    .product-item {
+        img {
+            width: 100%;
+            border-radius: #colors[border-radius];
+        }
+
+        .product-button {
+            display: block;
+            background-color: #colors[button-bg];
+            color: #colors[text];
+            text-align: center;
+            padding: 8px 0;
+            border-radius: #colors[border-radius];
+            margin-top: 8px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #colors[button-hover-bg];
+            }
+        }
+    }
+}
