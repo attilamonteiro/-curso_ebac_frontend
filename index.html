@@ -1,67 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Título</title>
-    <!-- Inclua o arquivo CSS compilado do Less -->
-    <link rel="stylesheet/less" type="text/css" href="css/main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.12.2/less.min.js"></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-    <!-- Cabeçalho -->
-    <header class="header">
+    <header>
         <div class="container">
-            <!-- Conteúdo do cabeçalho aqui -->
-            <h1>Meu Site</h1>
-            <p>Bem-vindo ao meu site!</p>
+            <div class="branding">
+                <img src="https://via.placeholder.com/120x70" />
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Produtos</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
-
-    <!-- Seção com Botões -->
-    <section class="section">
-        <h2>Exemplo de Seção com Botões</h2>
-
-        <div class="products button-container">
-            <div class="product-item">
-                PRODUTO 1
-                <a href="#" class="product-button" style="width: 30%;">Comprar</a>
-            </div>
-            <div class="product-item">
-                PRODUTO 2
-                <a href="#" class="product-button" style="width: 30%;">Comprar</a>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
+    <section>
+        <div class="container">
+            <h2>Produtos</h2>
+            <ul class="products">
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
-
-    <!-- Social Links -->
-    <nav class="nav">
-        <ul>
-            <li>
-                <a href="https://github.com/seu-usuario-do-github" target="_blank">
-                    <img src="img/github.svg" alt="GitHub">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/seu-usuario-do-instagram/" target="_blank">
-                    <img src="img/instagram.svg" alt="Instagram">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/seu-usuario-do-linkedin/" target="_blank">
-                    <img src="img/linkedin.svg" alt="LinkedIn">
-                </a>
-            </li>
-            <li>
-                <a href="mailto:seu-email@example.com">
-                    <img src="img/mail.svg" alt="E-mail">
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Rodapé -->
 </body>
 </html>
